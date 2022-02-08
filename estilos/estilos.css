@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=montserrat&display=swap");
+/*Variables*/
+/**********Uso de maps******/
+/**********@extend******/
+.paragraph, .parrafo {
+  color: deeppink;
+  font-size: 24px;
+  padding: 10px;
+}
+
+/**********@mixin******/
+.parrafo1 {
+  color: #f80888;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.parrafo2 {
+  color: #e002fd;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.parrafo3 {
+  color: #f50857;
+  font-size: 24px;
+  padding: 10px;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.text-color {
+  color: floralwhite;
+}
+
+.text-color1 {
+  color: deeppink;
+}
+
+.bg-pink {
+  background-color: deeppink;
+}
+
+.bg-pink:hover {
+  background-color: black;
+}
+
+/**************************** Menu ******************/
+#menu li > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+#menu form > button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carousel-inner {
+  max-height: 50rem;
+}
+
+.nav-link:hover {
+  color: deeppink !important;
+  -webkit-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
+}
+
+.b1 {
+  border: medium solid  deeppink  !important;
+  color: floralwhite !important;
+}
+
+
+.contacto{
+  height: 700px;
+}
+
+
+
+@media (max-width: 768px) {
+  #intro {
+    width: 90% !important;
+  }
+
+  iframe{
+    width: auto;
+  }
+
+}
+
+footer {
+  background: #1b2a4e;
+  min-height: 100px;
+}
+
+footer p {
+  color: floralwhite;
+  text-align: center;
+}
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: floralwhite;
+}
+
+main {
+  background-color: black;
+  opacity: 0.9;
+}
+
+footer {
+  background-color: deeppink;
+}
+
+.if {
+  background-color: black;
+  height: 65vh;
+  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+address {
+  color: floralwhite;
+}
+
+
+
+/*# sourceMappingURL=estilos.css.map */

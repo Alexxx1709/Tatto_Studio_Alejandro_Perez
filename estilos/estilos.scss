@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=montserrat&display=swap');
+
+/*Variables*/
+// $c1: rgb(255, 20, 147);
+// $c2: rgb(255, 250, 240);
+// $c3: rgb(0, 0, 0);
+// $c4: rgb(63, 63, 63);
+
+$f1: 'montserrat', sans-serif;
+
+
+/**********Uso de maps******/
+
+$palette: (
+    'c1' : rgb(255, 20, 147),
+    'c2' : rgb(255, 250, 240) ,
+    'c3' : rgb(0, 0, 0),
+    'c4' : rgb(63, 63, 63) ,
+
+);
+
+/**********@extend******/
+
+.paragraph{
+    color: map-get($palette , c1 );
+    font-size: 24px;
+    padding: 10px;
+}
+
+.parrafo{
+    @extend .paragraph;
+}
+
+/**********@mixin******/
+
+@mixin parrafo ($col){
+    color: $col;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.parrafo1{
+    @include parrafo (rgb(248, 8, 136))
+}
+
+.parrafo2{
+    @include parrafo (rgb(224, 2, 253))
+}
+
+.parrafo3{
+    @include parrafo (rgb(245, 8, 87))
+}
+
+
+
+
+
+body{
+    font-family: $f1;
+    overflow-x: hidden;
+}
+
+.text-color{
+    // color: $c2;
+    color: map-get($palette , c2 );
+}
+.text-color1{
+    // color: $c1;
+    color: map-get($palette , c1 );
+}
+
+.bg-pink{
+    //  background-color: $c1;
+    background-color: map-get($palette , c1 );
+    
+}
+.bg-pink:hover{
+    background-color: map-get($palette , c3 );
+}
+
+
+
+
+
+
+
+
+/**************************** Menu ******************/
+
+#menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    // color: $c4;
+    color: map-get($palette , c4 );
+
+}
+
+#menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel-inner {
+    max-height: 50rem ;
+}
+
+.nav-link:hover{
+    // color: $c1  
+    color: map-get($palette , c1 ) !important; 
+
+    transform: scale(1.1)!important ;
+    
+}
+
+.b1{
+    border: medium solid  deeppink  !important;
+    color: map-get($palette , c2 )   !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+    #intro{
+        width: 90% !important; 
+
+    }
+}
+
+footer {
+    background: #1b2a4e;
+    min-height: 100px;;
+}
+
+footer p{
+    // color:$c2;
+    color: map-get($palette , c2 );
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    // color:$c2;
+    color: map-get($palette , c2 );
+}
+main{
+    // background-color: $c3;
+    background-color: map-get($palette , c3 );
+    opacity: 0.9;
+}
+footer{
+    // background-color: $c1;
+    background-color: map-get($palette , c1 );
+}
+
+.if{
+    // background-color: $c3;
+    background-color: map-get($palette , c3 );
+    height: 65vh;
+    opacity: 0.9;
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+}
+address{
+    // color: $c2;
+    color: map-get($palette , c2 );
+}
+
